@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Patrick+Hand&display=swap');
 
 
 *{
@@ -5,31 +6,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+.balsamiq-sans-regular {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 body{
     background: linear-gradient(180deg, rgba(231,111,81,1) 0%, rgba(244,162,97,1) 100%);
     background-repeat: no-repeat;
     height: 100vh;
 }
 header {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 .circulo{
-    width: 212px;
-    height: 212px;
+    width: 162px;
+    height: 162px;
     border: 3px solid #2a9d8f;
     border-radius: 50%;
+    box-shadow: 3px 6px 10px #264653;
 }
 .borda {
-    width: 206px;
-    height: 206px;
+    width: 156px;
+    height: 156px;
     border: 3px solid rgba(0, 0, 0, 0);
     border-radius: 50%;
 }
 
 .borda > img {
-    width: 200px;
+    width: 150px;
     border-radius: 50%;
 }
 .box {
@@ -38,8 +45,8 @@ header {
 }
 .box .eye {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     font-display: block;
     background: white;
     margin: 0 20px;
@@ -64,22 +71,54 @@ header {
 section.lista {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .box ul a li {
-    width: 390px;
-    height: 90px;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
     background-color: #e9c46a;
     box-shadow: 8px 8px 0px #264653;
     font-size: 30px;
     color: #2a9d8f;
     list-style-type: none;
+    transition: 2s;
+}
+.box ul a li:hover{
+    transform: scale(1.1);
 }
 li i {
-    margin-left: 10px;
-    font-size: 60px;
+    margin: 0px 20px 0px 20px;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 40px;
 }
 a {
 
     margin: 20px;
     text-decoration: none;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    font-family: "Balsamiq Sans", sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px){
+    .box ul a li{
+        width: 300px;
+        height: 50px;
+        margin-top: 15px;
+    }
+    .circulo{
+        width: 163px;
+        height: 163px;
+    }
+    .borda > img{
+        width: 152px;
+    }
 }
